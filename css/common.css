@@ -8,10 +8,12 @@
  padding:0;
  box-sizing: border-box;
 }
+
 html, body{
  background: #fff;
  font-family: 'Outfit', sans-serif;
 }
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
 s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
@@ -21,17 +23,21 @@ figure, header, nav, section, article, aside, footer, figcaption {
  border: 0;
  outline: 0;
 }
+
 img{
  display:block;
 }
+
 ul, li {
  list-style: none;
 }
+
 p {
  font-size: 14px;
  line-height: 25px;
  color: #2a2a2a;
 }
+
 a, i, b, strong, em{
  text-decoration: none;
  font-weight:normal;
@@ -39,4 +45,62 @@ a, i, b, strong, em{
  color:inherit;
 }
 
-
+/********** Root Style **********/
+/********** Root Style **********/
+:root {
+  /* 1. color */
+  /* 2. font-size */
+  /* 3. element interval */
+  /* Color */
+  --color-top: #e4efe8;
+  --color-hero: #f7f0e3;
+  --color-point: #fecfd7;
+  /* Font Size */
+  --fs-big: 3.375rem;
+  --fs-middle: 2.1875rem;
+  --fs-small: 0.75rem;
+  --fs-nav: 0.875rem;
+  --fs-title: 3.125rem;
+  --fs-product: 1rem;
+  /* Elements Interval */
+  --el-section: 4.6875rem;
+  --el-small: 1rem;
+  --el-middle: 1.875rem;
+  --el-wide: 2.5rem;
+  --el-title: 2.5rem;
+  }
+  
+  
+  /********** Common Style **********/
+  .wrapper{
+  width:100%;
+  height:auto;
+  overflow:hidden; /* 가로스크롤 방지 */
+  }
+  
+  
+  .page-interval{
+  padding:0 1.25rem;
+  }
+  
+  
+  .narrow-center{
+  width:100%;
+  max-width: 1320px;
+  margin:auto;
+  height:auto;
+  }
+  
+  
+  .wide-center{
+  width:100%;
+  max-width: 980px;
+  margin:auto;
+  height:auto;
+  }
+  
+  
+  .section-padding{
+  padding:var(--el-section) 0;
+  }
+  
